@@ -1,0 +1,60 @@
+.div-hero {
+  height: 500px;
+  position: relative;
+  padding: 0 1.5rem;
+  margin-bottom: 6rem;
+  border-radius: 10px;
+}
+
+#img-hero {
+  width: calc(100% - 3rem);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  border-radius: 10px;
+}
+
+.div-hero > div {
+  width: calc(100% - 3rem);
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  z-index: 3;
+  padding: 6rem 1.5rem;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+.div-hero > div > h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.div-hero > div > div {
+  color: hsl(43, 78%, 98%);
+  font-size: 15px;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.div-hero > div > .btn-cta {
+  padding: 1rem 2.25rem;
+  background-color: hsl(179, 81%, 29%);
+  border-radius: 6px;
+  color: hsl(0, 0%, 100%);
+}
+
+.div-our-collection {
+  padding: 0 1.5rem;
+}
+
+.div-our-collection > h3 {
+  font-size: 2.5rem;
+  text-transform: lowercase;
+  background: linear-gradient(#83888F, transparent);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
