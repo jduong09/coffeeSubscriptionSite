@@ -212,6 +212,7 @@ img-logo {
 
 .list-footer-pages > li {
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .list-footer-pages > li:last-of-type {
@@ -354,6 +355,7 @@ img-logo {
   }
 
   .div-how {
+    margin-bottom: 9rem;
     position: relative;
     text-align: start;
   }
@@ -366,7 +368,7 @@ img-logo {
     position: absolute;
     top: calc(3.5rem + 32px);
     left: 0;
-    width: 60%;
+    width: 72%;
     display: flex;
     justify-content: space-between;
   }
@@ -391,5 +393,55 @@ img-logo {
     border-radius: 50%;
     border: 2px solid #0E8784;
     background-color: white;
+  }
+
+  .list-how {
+    display: flex;
+  }
+
+  .list-item-how {
+    width: 32%;
+    margin-bottom: 2.5rem;
+    margin-right: .5rem;
+  }
+
+  .list-item-how:last-of-type {
+    margin-right: 0;
+  }
+
+  .list-item-how > span {
+    font-size: 4.5rem;
+  }
+
+  .list-item-how > div {
+    width: 93%;
+  }
+
+  footer {
+    padding: 4rem 2.5rem;
+  }
+
+  #footer-logo {
+    margin-bottom: 1.75rem;
+  }
+
+  .list-footer-pages {
+    width: 42.5%;
+    margin: 0 auto 4rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .list-footer-pages > li {
+    margin-bottom: 0;
+  }
+
+  .list-footer-pages > li > a {
+    font-size: 12px;
+  }
+
+  .list-footer-social-media-links {
+    width: 20%;
   }
 }
