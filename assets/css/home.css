@@ -5,6 +5,7 @@ main {
 .div-hero {
   height: 500px;
   position: relative;
+  z-index: 2;
   margin-bottom: 6rem;
   border-radius: 10px;
 }
@@ -66,6 +67,10 @@ main {
 
 .list-item-display-coffee {
   margin-bottom: 3rem;
+}
+
+.list-item-display-coffee:last-of-type {
+  margin-bottom: 0;
 }
 
 .img-coffee-bag {
@@ -137,14 +142,14 @@ main {
   height: 50px;
 }
 
-.list-item-why-reason > h4 {
+.list-item-why-reason > div > h4 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-.list-item-why-reason > div {
+.list-item-why-reason > div > div {
   padding: 0 .75rem;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.5rem;
 }
 
@@ -156,11 +161,7 @@ main {
 .div-how > h3 {
   margin-bottom: 5rem;
   font-size: 1.5rem;
-  background: linear-gradient(#83888F, transparent);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: hsl(215, 5%, 54%);
 }
 
 .list-item-how {
@@ -173,7 +174,7 @@ main {
   font-size: 4rem;
   color: hsl(25, 95%, 86%);
   font-family: 'Fraunces';
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .list-item-how > h4 {
@@ -219,7 +220,7 @@ img-logo {
 
 .list-footer-pages > li > a {
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: .92px;
   color: hsl(215, 5%, 54%);
 }
@@ -232,3 +233,163 @@ img-logo {
   justify-content: space-between;
 }
 
+@media (min-width: 768px) {
+  main {
+    padding: 0 2.5rem;
+  }
+
+  .div-hero {
+    margin-bottom: 9rem;
+  }
+
+  #img-hero {
+    content: url('../home/tablet/image-hero-coffeepress.jpg');
+  }
+
+  .div-hero > div {
+    width: 70%;
+    padding: 6rem 3rem;
+    text-align: start;
+  }
+
+  .div-hero > div > h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .div-hero > div > div {
+    margin-bottom: 2.5rem;
+  }
+
+  .btn-cta {
+    padding: 1rem 2rem;
+    line-height: 25px;
+  }
+
+  .div-our-collection {
+    position: relative;
+    padding: 3.75rem;
+  }
+
+  .div-our-collection > h3 {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 900;
+    font-size: 6rem;
+  }
+
+  .list-our-collection {
+    padding: 1rem 0 0 0;
+  }
+
+  .list-item-display-coffee {
+    display: flex;
+    text-align: start;
+  }
+
+  .img-coffee-bag {
+    width: 255px;
+    margin: 0 auto;
+  }
+
+  .div-coffee-description {
+    padding-top: 1rem;
+    margin-left: 2rem;
+  }
+
+  .div-coffee-description > h4 {
+    line-height: 2rem;
+  }
+
+  .div-coffee-description > div {
+    padding: 0;
+  }
+
+  .div-why {
+    height: 573px;
+    margin-bottom: 26.5rem;
+  }
+
+  .div-why-description {
+    padding: 3.75rem 3.5rem 3.5rem 3.5rem;
+  }
+
+  .div-why-description > div {
+    padding: 0 2.5rem;
+  }
+
+  .list-why-reasons {
+    padding: 0 3.5rem;
+  }
+
+  .list-item-why-reason {
+    display: flex;
+    align-items: center;
+    padding: 3rem 3.5rem 3rem 4rem;
+  }
+
+  .img-why-reason {
+    width: 56px;
+    height: auto;
+    margin: 0 3.5rem 0 0;
+  }
+
+  #img-truck {
+    height: auto;
+  }
+
+  .list-item-why-reason > div {
+    text-align: start;
+  }
+
+  .list-item-why-reason > div > h4 {
+    margin-bottom: 1rem;
+  }
+
+  .list-item-why-reason > div > div {
+    padding: 0;
+  }
+
+  .div-how {
+    position: relative;
+    text-align: start;
+  }
+
+  .div-how > h3 {
+    margin-bottom: 7.5rem;
+  }
+
+  .div-how > #tablet-line-break {
+    position: absolute;
+    top: calc(3.5rem + 32px);
+    left: 0;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .div-how > #tablet-line-break::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FDD6BA;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+  }
+
+  #tablet-line-break > .span-circle {
+    position: relative;
+    display: block;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 2px solid #0E8784;
+    background-color: white;
+  }
+}

@@ -17,4 +17,30 @@ document.addEventListener('DOMContentLoaded', () => {
     listHeaderMenu.classList.add('hide');
     divHeaderBg.classList.add('hide');
   });
+
+  if (window.innerWidth >= 768) {
+    imgHamburger.classList.add('hide');
+    imgClose.classList.add('hide');
+    listHeaderMenu.classList.remove('hide');
+    divHeaderBg.classList.add('hide');
+  } else {
+    imgHamburger.classList.remove('hide');
+    imgClose.classList.remove('hide');
+    listHeaderMenu.classList.add('hide');
+    divHeaderBg.classList.remove('hide');
+  }
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+      imgHamburger.classList.add('hide');
+      imgClose.classList.add('hide');
+      listHeaderMenu.classList.remove('hide');
+      divHeaderBg.classList.add('hide');
+    } else {
+      imgHamburger.classList.remove('hide');
+      imgClose.classList.remove('hide');
+      listHeaderMenu.classList.add('hide');
+      divHeaderBg.classList.remove('hide');
+    }
+  });
 });
