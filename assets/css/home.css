@@ -445,3 +445,178 @@ img-logo {
     width: 20%;
   }
 }
+
+@media (min-width: 1400px) {
+  main {
+    padding: 0 5rem;
+  }
+
+  .div-hero {
+    height: 600px;
+  }
+
+  #img-hero {
+    content: url('../home/desktop/image-hero-coffeepress.jpg');
+  }
+
+  .div-hero > div {
+    width: 50%;
+    padding: 7rem 5rem;
+  }
+
+  .div-hero > div > h2 {
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .div-hero > div > div {
+    font-size: 1rem;
+    line-height: 26px;
+    width: 90%;
+    margin-bottom: 3rem;
+  }
+
+  .div-our-collection {
+    padding: 0 5rem;
+  }
+
+  .div-our-collection > h3 {
+    font-size: 150px;
+  }
+
+  .list-our-collection {
+    padding: 7rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list-item-display-coffee {
+    width: 22.5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .div-coffee-description {
+    padding-top: 2.5rem;
+    margin-left: 0;
+  }
+
+
+  .div-coffee-description > div {
+    font-size: 1rem;
+    line-height: 26px;
+  }
+
+  .div-why {
+    margin-bottom: 21rem;
+  }
+
+  .div-why-description {
+    padding: 6rem;
+  }
+
+  .div-why-description > h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .div-why-description > div {
+    width: 48.5%;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 26px;
+    margin: 0 auto;
+  }
+
+  .list-why-reasons {
+    padding: 0 5.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list-item-why-reason {
+    width: 32.5%;
+    padding: 4rem 2.5rem 3rem 2.5rem;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .img-why-reason {
+    width: 72px;
+    margin: 0 auto 4rem auto;
+  }
+
+  #img-truck {
+    padding: 11px 0;
+  }
+  .list-item-why-reason > div {
+    text-align: center;
+  }
+
+  .list-item-why-reason:nth-of-type(2) > div {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .list-item-why-reason:nth-of-type(3) > div {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .div-how {
+    padding: 0 5.5rem;
+    margin-bottom: 12rem;
+  }
+
+  .div-how > h3 {
+    margin-bottom: 10.5rem;
+  }
+
+  .div-how > #tablet-line-break {
+    width: 60%;
+    left: 5.5rem;
+  }
+
+  .list-item-how {
+    width: 26%;
+    margin-right: 5rem;
+    margin-bottom: 3.75rem;
+  }
+
+  .list-item-how > h4 {
+    width: 80%;
+    font-size: 2rem;
+    line-height: 36px;
+  }
+
+  .list-item-how > div {
+    width: auto;
+    font-size: 1rem;
+    line-height: 26px;
+  }
+
+  footer {
+    padding: 0 5rem 5.5rem 5rem;
+  }
+
+  .div-footer {
+    display: flex;
+    align-items: center;
+    padding: 2.75rem 5.5rem;
+  }
+
+  #footer-logo {
+    margin-bottom: 0;
+  }
+
+  .list-footer-pages {
+    width: 25%;
+    margin: 0 0 0 5rem;
+  }
+
+  .list-footer-social-media-links {
+    width: 10%;
+    margin: 0 0 0 auto;
+  }
+}
