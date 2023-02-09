@@ -1,4 +1,5 @@
 body {
+  position: relative;
   min-height: 100vh;
   background-color: hsl(43, 78%, 98%);
   font-family: 'Barlow', sans-serif;
@@ -15,7 +16,7 @@ h2, h3, h4, h5 {
 }
 
 /* Active States */
-.btn-cta:hover, .list-footer-pages > li > a:hover, .list-footer-social-media-links > li > a:hover {
+#img-hamburger, #img-close, .btn-cta:hover, .list-footer-pages > li > a:hover, .list-footer-social-media-links > li > a:hover {
   cursor: pointer;
 }
 
@@ -93,6 +94,49 @@ header {
   font-family: 'Fraunces', serif;
   font-weight: 700;
   font-size: 1.125rem;
+}
+
+.div-footer {
+  padding: 3rem;
+  text-align: center;
+  background-color: hsl(213, 17%, 21%);
+}
+
+#footer-logo {
+  margin-bottom: 2.5rem;
+}
+
+img-logo {
+  width: auto;
+  height: 24px;
+}
+
+.list-footer-pages {
+  margin-bottom: 2rem;
+}
+
+.list-footer-pages > li {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.list-footer-pages > li:last-of-type {
+  margin-bottom: 0;
+}
+
+.list-footer-pages > li > a {
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: .92px;
+  color: hsl(215, 5%, 54%);
+}
+
+.list-footer-social-media-links {
+  width: 52%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media (min-width: 768px) {
