@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
     divHeaderBg.classList.add('hide');
   } else {
     imgHamburger.classList.remove('hide');
-    imgClose.classList.remove('hide');
+    imgClose.classList.add('hide');
     listHeaderMenu.classList.add('hide');
-    divHeaderBg.classList.remove('hide');
+    divHeaderBg.classList.add('hide');
   }
 
   window.addEventListener('resize', () => {
@@ -38,9 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
       divHeaderBg.classList.add('hide');
     } else {
       imgHamburger.classList.remove('hide');
-      imgClose.classList.remove('hide');
+      imgClose.classList.add('hide');
       listHeaderMenu.classList.add('hide');
-      divHeaderBg.classList.remove('hide');
+      divHeaderBg.classList.add('hide');
     }
   });
 });
