@@ -416,34 +416,6 @@ img-logo {
   .list-item-how > div {
     width: 93%;
   }
-
-  footer {
-    padding: 4rem 2.5rem;
-  }
-
-  #footer-logo {
-    margin-bottom: 1.75rem;
-  }
-
-  .list-footer-pages {
-    width: 42.5%;
-    margin: 0 auto 4rem auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .list-footer-pages > li {
-    margin-bottom: 0;
-  }
-
-  .list-footer-pages > li > a {
-    font-size: 12px;
-  }
-
-  .list-footer-social-media-links {
-    width: 20%;
-  }
 }
 
 @media (min-width: 1400px) {

@@ -155,3 +155,90 @@ footer {
   padding: 0 1.5rem;
   margin-bottom: 4.5rem;
 }
+
+@media (min-width: 768px) {
+  main {
+    padding: 0 2.5rem;
+  }
+
+  /* div-hero */
+  .div-hero {
+    text-align: start;
+  }
+
+  #img-about {
+    content: url('../about/tablet/image-hero-whitecup.jpg');
+  }
+
+  .div-hero > div {
+    width: 75%;
+    padding: 7.25rem 3.5rem;
+  }
+
+  .div-hero > div > h2 {
+    font-size: 2rem;
+  }
+
+  /* div-our-commitment */
+  .div-our-commitment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18rem;
+    text-align: start;
+  }
+  #img-our-commitment {
+    height: 470px;
+    content: url('../about/tablet/image-commitment.jpg');
+    margin-right: 4rem;
+    margin-bottom: 0;
+  }
+
+  /* div-uncompromising-quality */
+  .div-uncompromising-quality {
+    padding: 14rem 4.5rem 4.5rem 4.5rem;
+    margin-bottom: 9rem;
+  }
+
+  #img-uncompromising-quality {
+    content: url('../about/tablet/image-quality.jpg');
+    width: calc(100% - 7rem);
+    top: -160px;
+    left: 3.5rem;
+    right: 3.5rem;
+  }
+
+  .div-uncompromising-quality > h3 {
+    font-size: 2rem;
+  }
+
+  /* .div-our-headquarters */
+  .div-our-headquarters {
+    margin-bottom: 9rem;
+    text-align: start;
+  }
+
+  .list-headquarter-locations {
+    display: flex;
+  }
+
+  .list-item-headquarter-location {
+    width: 33%;
+    margin-bottom: 0;
+  }
+
+  .list-item-headquarter-location > img {
+    margin: 0 0 3rem 0;
+  }
+
+  #img-australia {
+    margin-bottom: 56px;
+  }
+
+  .list-item-headquarter-location > div > h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+
+}
