@@ -240,5 +240,106 @@ footer {
 }
 
 @media (min-width: 1400px) {
+  main {
+    padding: 0 5rem;
+  }
 
+  /* .div-hero */
+  .div-hero {
+    height: 450px;
+    margin-bottom: 10.5rem;
+  }
+
+  #img-about {
+    content: url('../about/desktop/image-hero-whitecup.jpg');
+    height: 450px;
+  }
+
+  .div-hero > div {
+    width: 46%;
+    padding: 8.5rem 5.25rem;
+  }
+
+  .div-hero > div > h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .div-hero > div > div {
+    font-size: 1rem;
+    line-height: 26px
+  }
+
+  .div-our-commitment {
+    padding: 0 5.25rem;
+    margin-bottom: 16rem;
+  }
+
+  #img-our-commitment {
+    height: 520px;
+    content: url('../about/desktop/image-commitment.jpg');
+    margin-right: 8rem;
+  }
+
+  .div-our-commitment > div > h3 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .div-our-commitment > div > div {
+    font-size: 1rem;
+    line-height: 26px;
+  }
+
+  .div-uncompromising-quality {
+    padding: 5.5rem 5.25rem 11rem 5.25rem;
+    margin-bottom: 10.5rem;
+    text-align: start;
+  }
+
+  #img-uncompromising-quality {
+    width: auto;
+    height: 474px;
+    content: url('../about/desktop/image-quality.jpg');
+    top: initial;
+    left: initial;
+    right: 5.25rem;
+    bottom: 5.5rem;
+  }
+
+  .div-uncompromising-quality > h3, .div-uncompromising-quality > div {
+    width: 48%;
+  }
+
+  .div-uncompromising-quality > h3 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .div-uncompromising-quality > div {
+    font-size: 1rem;
+    line-height: 26px;
+  }
+
+  .div-our-headquarters {
+    padding-left: 5.25rem;
+    padding-right: 5.25rem;
+    margin-bottom: 10.5rem;
+  }
+
+  .div-our-headquarters > h3 {
+    margin-bottom: 5.5rem;
+  }
+
+  .list-item-headquarter-location > img {
+    margin-bottom: 2.75rem;
+  }
+
+  .list-item-headquarter-location > div > h4 {
+    font-size: 2rem;
+  }
+
+  footer {
+    padding: 0 5rem;
+  }
 }

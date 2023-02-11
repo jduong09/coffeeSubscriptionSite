@@ -199,4 +199,28 @@ img-logo {
   header {
     padding: 2.5rem 5rem;
   }
+
+  footer {
+    padding: 0 5rem 5.5rem 5rem;
+  }
+
+  .div-footer {
+    display: flex;
+    align-items: center;
+    padding: 2.75rem 5.5rem;
+  }
+
+  #footer-logo {
+    margin-bottom: 0;
+  }
+
+  .list-footer-pages {
+    width: 25%;
+    margin: 0 0 0 5rem;
+  }
+
+  .list-footer-social-media-links {
+    width: 10%;
+    margin: 0 0 0 auto;
+  }
 }
