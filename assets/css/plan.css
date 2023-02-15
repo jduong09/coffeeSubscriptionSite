@@ -70,6 +70,102 @@
   line-height: 25px;
 }
 
+.div-user-form {
+  padding: 0 1.5rem;
+}
+
+.div-form-item {
+  margin-bottom: 7rem;
+}
+
+.div-input-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.div-input-header > h3 {
+  width: 70%;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: hsl(215, 5%, 54%);
+}
+
+.div-input-header > svg {
+  width: 19px;
+  height: 13px;
+}
+
+.div-input-header.open > svg {
+  transform: rotate(180deg);
+}
+
+.div-form-item > div:last-of-type > ul > li {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  color: hsl(215, 19%, 25%);
+  background-color: hsl(40, 29%, 94%);
+  border-radius: 8px;
+}
+
+.div-form-item > div:last-of-type > ul > li.selected {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(179, 81%, 29%);
+}
+
+.div-form-item > div:last-of-type > ul > li > h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: .5rem;
+}
+
+.div-form-item > div:last-of-type > ul > li > div {
+  font-size: 1rem;
+  line-height: 26px;
+}
+
+.div-checkout-summary {
+  margin-bottom: 7rem;
+}
+
+.div-order {
+  padding: 2rem;
+  margin-bottom: 3.5rem;
+  background-color: hsl(213, 17%, 21%);
+  color: hsl(0, 0%, 100%);
+}
+
+.div-order > span {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.div-order > h3 {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.div-order > h3 > span {
+  color: hsl(179, 81%, 29%);
+}
+
+#input-user-submit {
+  display: block;
+  padding: 1rem 2.25rem;
+  margin: 0 auto;
+  font-family: 'Fraunces';
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  color: hsl(0, 0%, 100%);
+  border-radius: 6px;
+  background-color: hsl(179, 81%, 29%);
+}
+
 
 
 
