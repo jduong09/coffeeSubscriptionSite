@@ -10,6 +10,8 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/shared.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/plan.css">
   <script type="text/javascript" src="./assets/js/headerMenu.js"></script>
+  <script type="text/javascript" src="./assets/js/listUserChoicesHeader.js"></script>
+  <script type="text/javascript" src="./assets/js/listUserChoices.js"></script>
   <title>Frontend Mentor | Coffeeroasters subscription site</title>
 </head>
 <!-- Mobile: 375px x 5950px -->
@@ -68,7 +70,7 @@
           <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" fill="#0E8784" fill-rule="nonzero"/></svg>
         </div>
         <div id="div-how">
-          <ul id="list-preferences">
+          <ul id="list-preference" class="list-user-choices">
             <li>
               <h4>Capsule</h4>
               <div>Compatible with Nespresso systems and similar brewers</div>
@@ -90,7 +92,7 @@
           <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" fill="#0E8784" fill-rule="nonzero"/></svg>
         </div>
         <div class="div-input">
-          <ul id="list-bean-type">
+          <ul id="list-type" class="list-user-choices">
             <li>
               <h4>Single origin</h4>
               <div>Distinct, high quality coffee from a specific family-owned farm</div>
@@ -112,7 +114,7 @@
           <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" fill="#0E8784" fill-rule="nonzero"/></svg>
         </div>
         <div class="div-input">
-          <ul id="list-quantity">
+          <ul id="list-quantity" class="list-user-choices">
             <li>
               <h4>250g</h4>
               <div>Perfect for the solo drinker. Yields about 12 delicious cups.</div>
@@ -134,7 +136,7 @@
           <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" fill="#0E8784" fill-rule="nonzero"/></svg>
         </div>
         <div class="div-input">
-          <ul id="list-grind-li">
+          <ul id="list-grind" class="list-user-choices">
             <li>
               <h4>Wholebean</h4>
               <div>Best choice if you cherish the full sensory experience</div>
@@ -156,7 +158,7 @@
           <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" fill="#0E8784" fill-rule="nonzero"/></svg>
         </div>
         <div class="div-input">
-          <ul id="list-deliveries">
+          <ul id="list-delivery" class="list-user-choices">
             <li>
               <h4>Every week</h4>
               <div>$14.00 per shipment. Includes free first-class shipping.</div>
@@ -175,7 +177,7 @@
       <div class="div-checkout-summary">
         <div class="div-order">
           <span>Order Summary</span>
-          <h3>"I drink coffee as <span></span>, with a <span></span> type of bean. <span></span> ground ala <span></span>, sent to me <span></span>."</h3>
+          <h3 id="result-order-summary">"I drink coffee as <span id="span-preference"></span>, with a <span id="span-type"></span> type of bean. <span id="span-quantity"></span> ground ala <span id="span-grind"></span>, sent to me <span id="span-delivery"></span>."</h3>
         </div>
         <input id="input-user-submit" type="submit" value="Create my plan!"/>
       </div>
@@ -234,5 +236,4 @@
   </footer>
   <div id="div-bg-header-open" class="hide"></div>
 </body>
-
 </html>

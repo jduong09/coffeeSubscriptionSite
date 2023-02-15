@@ -109,11 +109,6 @@
   border-radius: 8px;
 }
 
-.div-form-item > div:last-of-type > ul > li.selected {
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(179, 81%, 29%);
-}
-
 .div-form-item > div:last-of-type > ul > li > h4 {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -166,12 +161,17 @@
   background-color: hsl(179, 81%, 29%);
 }
 
-
-
-
-
-
 /* Footer */
 footer {
   padding: 0 1.5rem;
+}
+
+/* Active States */
+.list-user-choices > li, #input-user-submit {
+  cursor: pointer;
+}
+
+.div-form-item > div:last-of-type > ul > li:hover, .div-form-item > div:last-of-type > ul > li.selected {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(179, 81%, 29%);
 }
