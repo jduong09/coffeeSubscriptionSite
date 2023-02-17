@@ -148,7 +148,11 @@
   color: hsl(179, 81%, 29%);
 }
 
-#input-user-submit {
+#span-modular-word, #span-grind-phrase {
+  color: hsl(0, 0%, 100%);
+}
+
+#input-user-submit, .btn-cta {
   display: block;
   padding: 1rem 2.25rem;
   margin: 0 auto;
@@ -164,6 +168,42 @@
 /* Footer */
 footer {
   padding: 0 1.5rem;
+}
+
+/* #div-order-summary */
+/* 597px height */
+#div-order-modal {
+
+}
+
+.div-modal-header {
+  padding: 1.75rem 1.5rem;
+  background-color: hsl(215, 19%, 25%);
+  color: hsl(0, 0%, 100%);
+}
+
+.div-modal-header > h3 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+}
+
+.div-modal-summary {
+  padding: 2.5rem 1.5rem;
+}
+
+#div-order-summary {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-family: 'Fraunces';
+  font-weight: 900;
+  color: hsl(215, 5%, 54%);
+}
+
+#div-order-confirmation {
+  margin-bottom: 1.5rem;
+  font-size: 15px;
+  line-height: 25px;
+  color: hsl(215, 19%, 25%);
 }
 
 /* Active States */
