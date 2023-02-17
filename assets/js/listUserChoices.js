@@ -10,8 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const listItemUserChoice = listItemUserChoices[i];
 
     listItemUserChoice.addEventListener('click', (e) => {
-      e.preventDefault();
-
+      console.log('clicked');
       const parentListUserChoice = e.currentTarget.parentElement;
       const parentListChildren = parentListUserChoice.children;
       const parentListUserChoiceId = parentListUserChoice.id;
@@ -36,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (parentListUserChoiceId === 'list-preference') {
-          spanPreference.innerHTML = userChoice;
+          spanPreference.innerHTML = userChoice === 'Capsule' ? `${userChoice}s` : userChoice;
         } else if (parentListUserChoiceId === 'list-type') {
           spanType.innerHTML = userChoice;
         } else if (parentListUserChoiceId === 'list-quantity') {

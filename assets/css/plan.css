@@ -92,12 +92,12 @@
   color: hsl(215, 5%, 54%);
 }
 
-.div-input-header > svg {
+.div-input-header > button > svg {
   width: 19px;
   height: 13px;
 }
 
-.div-input-header.open > svg {
+.div-input-header.open > button > svg {
   transform: rotate(180deg);
 }
 

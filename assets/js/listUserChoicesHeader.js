@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const iconArrows = document.querySelectorAll('.div-input-header > svg');
+  const iconArrows = document.querySelectorAll('.div-input-header > button');
 
   for (let i = 0; i < iconArrows.length; i++) {
     const iconArrow = iconArrows[i];

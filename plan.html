@@ -12,6 +12,7 @@
   <script type="text/javascript" src="./assets/js/headerMenu.js"></script>
   <script type="text/javascript" src="./assets/js/listUserChoicesHeader.js"></script>
   <script type="text/javascript" src="./assets/js/listUserChoices.js"></script>
+  <script type="text/javascript" src="./assets/js/listUserChoicesConditionals.js"></script>
   <title>Frontend Mentor | Coffeeroasters subscription site</title>
 </head>
 <!-- Mobile: 375px x 5950px -->
@@ -67,19 +68,21 @@
       <div id="div-preferences" class="div-form-item">
         <div class="div-input-header open">
           <h3>How do you drink your coffee?</h3>
-          <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" fill="#0E8784" fill-rule="nonzero"/></svg>
+          <button class="btn-list-arrow">
+            <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" fill="#0E8784" fill-rule="nonzero"/></svg>
+          </button>
         </div>
         <div id="div-how">
           <ul id="list-preference" class="list-user-choices">
-            <li>
+            <li id="list-item-preference-capsule" data-choice="preference-capsule">
               <h4>Capsule</h4>
               <div>Compatible with Nespresso systems and similar brewers</div>
             </li>
-            <li>
+            <li id="list-item-preference-filter" data-choice="preference-filter">
               <h4>Filter</h4>
               <div>For pour over or drop methods like Aeropress, Chemex, and V60</div>
             </li>
-            <li>
+            <li id="list-item-preference-espresso" data-choice="preference-espresso">
               <h4>Espresso</h4>
               <div>Dense and finely ground beans for an intense, flavorful experience</div>
             </li>
@@ -89,19 +92,21 @@
       <div id="div-bean-type" class="div-form-item">
         <div class="div-input-header open">
           <h3>What type of coffee?</h3>
-          <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" fill="#0E8784" fill-rule="nonzero"/></svg>
+          <button class="btn-list-arrow">
+            <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" fill="#0E8784" fill-rule="nonzero"/></svg>
+          </button>
         </div>
         <div class="div-input">
           <ul id="list-type" class="list-user-choices">
-            <li>
+            <li id="list-item-type-single" data-choice="type-single">
               <h4>Single origin</h4>
               <div>Distinct, high quality coffee from a specific family-owned farm</div>
             </li>
-            <li>
+            <li id="list-item-type-decaf" data-choice="type-decaf">
               <h4>Decaf</h4>
               <div>Just like regular coffee, except the caffeine has been removed</div>
             </li>
-            <li>
+            <li id="list-item-type-blended" data-choice="type-blended">
               <h4>Blended</h4>
               <div>Combination of two or three dark roasted beans of organic coffees</div>
             </li>
@@ -111,19 +116,21 @@
       <div id="div-quantity" class="div-form-item">
         <div class="div-input-header open">
           <h3>How much would you like?</h3>
-          <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" fill="#0E8784" fill-rule="nonzero"/></svg>
+          <button class="btn-list-arrow">
+            <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" fill="#0E8784" fill-rule="nonzero"/></svg>
+          </button>
         </div>
         <div class="div-input">
           <ul id="list-quantity" class="list-user-choices">
-            <li>
+            <li id="list-item-quantity-250" data-choice="quantity-250g">
               <h4>250g</h4>
               <div>Perfect for the solo drinker. Yields about 12 delicious cups.</div>
             </li>
-            <li>
+            <li id="list-item-quantity-500" data-choice="quantity-500g">
               <h4>500g</h4>
               <div>Perfect li for a couple. Yields about 40 delectable cups.</div>
             </li>
-            <li>
+            <li id="list-item-quantity-1000" data-choice="quantity-1000g">
               <h4>1000g</h4>
               <div>Perfect for offices and events. Yields about 90 delightful cups.</div>
             </li>
@@ -133,19 +140,21 @@
       <div id="div-grind-li" class="div-form-item">
         <div class="div-input-header open">
           <h3>Want us to grind them?</h3>
-          <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" fill="#0E8784" fill-rule="nonzero"/></svg>
+          <button class="btn-list-arrow">
+            <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" fill="#0E8784" fill-rule="nonzero"/></svg>
+          </button>
         </div>
         <div class="div-input">
           <ul id="list-grind" class="list-user-choices">
-            <li>
+            <li id="list-item-grind-wholebean" data-choice="grind-wholebean">
               <h4>Wholebean</h4>
               <div>Best choice if you cherish the full sensory experience</div>
             </li>
-            <li>
+            <li id="list-item-grind-filter" data-choice="grind-filter">
               <h4>Filter</h4>
               <div>For drop or pour-over coffee methods such as V60 or Aeropress</div>
             </li>
-            <li>
+            <li id="list-item-grind-cafetiére" data-choice="grind-cafetiére">
               <h4>Cafetiére</h4>
               <div>Course ground beans specially suited for french press coffee</div>
             </li>
@@ -155,19 +164,21 @@
       <div id="div-deliveries" class="div-form-item">
         <div class="div-input-header open">
           <h3>How often should we deliver?</h3>
-          <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" fill="#0E8784" fill-rule="nonzero"/></svg>
+          <button class="btn-list-arrow">
+            <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" fill="#0E8784" fill-rule="nonzero"/></svg>
+          </button>
         </div>
         <div class="div-input">
           <ul id="list-delivery" class="list-user-choices">
-            <li>
+            <li id="list-item-delivery-one-week" data-choice="delivery-one-week">
               <h4>Every week</h4>
               <div>$14.00 per shipment. Includes free first-class shipping.</div>
             </li>
-            <li>
+            <li id="list-item-delivery-two-week" data-choice="delivery-two-week">
               <h4>Every 2 weeks</h4>
               <div>$17.25 per shipment. Includes free priority shipping.</div>
             </li>
-            <li>
+            <li id="list-item-delivery-one-month" data-choice="delivery-one-month">
               <h4>Every month</h4>
               <div>$22.50 per shipment. Includes free priority shipping.</div>
             </li>
