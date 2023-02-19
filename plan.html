@@ -12,6 +12,7 @@
   <script type="text/javascript" src="./assets/js/listUserChoicesHeader.js"></script>
   <script type="text/javascript" src="./assets/js/listUserChoices.js"></script>
   <script type="text/javascript" src="./assets/js/listUserChoicesConditionals.js"></script>
+  <script type="text/javascript" src="./assets/js/checkout.js"></script>
   <title>Frontend Mentor | Coffeeroasters subscription site</title>
 </head>
 <!-- Mobile: 375px x 5950px -->
@@ -189,7 +190,7 @@
           <span>Order Summary</span>
           <h3 id="result-order-summary">"I drink coffee <span id="span-modular-word">as</span> <span id="span-preference">___</span>, with a <span id="span-type">___</span> type of bean. <span id="span-quantity">___</span> <span id="span-grind-phrase">ground ala</span> <span id="span-grind">___</span>, sent to me <span id="span-delivery">___</span>."</h3>
         </div>
-        <input id="input-user-submit" type="submit" value="Create my plan!"/>
+        <button id="btn-user-submit" type="submit">Create my plan!</button>
       </div>
     </div>
   </main>
@@ -244,7 +245,7 @@
       </ul>
     </div>
   </footer>
-  <div id="div-order-modal">
+  <div id="div-order-modal" class="hide">
     <div class="div-modal-header">
       <h3>Order Summary</h3>
     </div>
@@ -255,5 +256,6 @@
     </div>
   </div>
   <div id="div-bg-header-open" class="hide"></div>
+  <div id="div-bg-modal-open" class="hide"></div>
 </body>
 </html>

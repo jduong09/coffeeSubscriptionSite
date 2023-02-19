@@ -152,7 +152,7 @@
   color: hsl(0, 0%, 100%);
 }
 
-#input-user-submit, .btn-cta {
+#btn-user-submit, .btn-cta {
   display: block;
   padding: 1rem 2.25rem;
   margin: 0 auto;
@@ -173,7 +173,12 @@ footer {
 /* #div-order-summary */
 /* 597px height */
 #div-order-modal {
-
+  width: calc(100% - 3rem);
+  position: absolute;
+  top: 3.25rem;
+  left: 1.5rem;
+  z-index: 4;
+  border-radius: 8px;
 }
 
 .div-modal-header {
@@ -188,7 +193,8 @@ footer {
 }
 
 .div-modal-summary {
-  padding: 2.5rem 1.5rem;
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+  background-color: hsl(0, 0%, 100%);
 }
 
 #div-order-summary {
@@ -206,8 +212,22 @@ footer {
   color: hsl(215, 19%, 25%);
 }
 
+#btn-checkout-confirm {
+  padding: 1rem 2rem;
+}
+
+#div-bg-modal-open {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: hsla(0, 0%, 59%, .8);
+}
+
 /* Active States */
-.list-user-choices > li, #input-user-submit {
+.list-user-choices > li, #btn-user-submit {
   cursor: pointer;
 }
 
