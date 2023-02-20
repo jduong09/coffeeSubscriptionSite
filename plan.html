@@ -188,9 +188,12 @@
       <div class="div-checkout-summary">
         <div class="div-order">
           <span>Order Summary</span>
-          <h3 id="result-order-summary">"I drink coffee <span id="span-modular-word">as</span> <span id="span-preference">___</span>, with a <span id="span-type">___</span> type of bean. <span id="span-quantity">___</span> <span id="span-grind-phrase">ground ala</span> <span id="span-grind">___</span>, sent to me <span id="span-delivery">___</span>."</h3>
+          <h3 id="result-order-summary">"I drink coffee <span id="span-modular-word">as</span> <span id="span-preference" class="span-user-choice">___</span>, with a <span id="span-type" class="span-user-choice">___</span> type of bean. <span id="span-quantity" class="span-user-choice">___</span> <span id="span-grind-phrase">ground ala</span> <span id="span-grind" class="span-user-choice">___</span>, sent to me <span id="span-delivery" class="span-user-choice">___</span>."</h3>
         </div>
-        <button id="btn-user-submit" type="submit">Create my plan!</button>
+        <div>
+          <button id="btn-user-submit" type="submit">Create my plan!</button>
+          <span id="span-submit-error" class="hide">Error: Plan not completed.</span>
+        </div>
       </div>
     </div>
   </main>
@@ -250,7 +253,7 @@
       <h3>Order Summary</h3>
     </div>
     <div class="div-modal-summary">
-      <div id="div-order-summary">"I drink my coffee ___, with a ___ type of bean. ___ ground ala ___, sent to me ___."</div>
+      <div id="div-order-summary">"I drink my coffee ___, with a ___ type of bean, ___ ground ala ___, sent to me ___."</div>
       <div id="div-order-confirmation">Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout.</div>
       <button id="btn-checkout-confirm" class="btn-cta">Checkout - <span id="span-checkout-price">$14.00</span> / <span id="span-checkout-timeframe">mo</span></button>
     </div>

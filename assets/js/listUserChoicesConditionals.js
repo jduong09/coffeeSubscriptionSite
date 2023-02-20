@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const spanOneMonthPrice = document.querySelector('#list-item-delivery-one-month > div > .span-shipment-price');
 
     listItemQuantity.addEventListener('click', () => {
-
       if (i === 0) {
         spanOneWeekPrice.innerText = '$7.20';
         spanTwoWeekPrice.innerText = '$9.60';
