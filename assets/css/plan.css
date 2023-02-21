@@ -246,3 +246,29 @@ footer {
   color: hsl(0, 0%, 100%);
   background-color: hsl(179, 81%, 29%);
 }
+
+@media (min-width: 768px) {
+  .div-hero {
+    padding: 0 2.5rem;
+    margin-bottom: 9rem;
+  }
+  
+  #img-plan {
+    height: 400px;
+    content: url('../plan/tablet/image-hero-blackcup.jpg');
+  }
+
+  .div-hero > div {
+    width: 65%;
+    top: 0;
+    left: 2.5rem;
+    right: 0;
+    padding: 8rem 3.5rem;
+    text-align: start;
+  }
+
+  .div-hero > div > h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
