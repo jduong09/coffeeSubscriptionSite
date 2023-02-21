@@ -13,6 +13,7 @@
   <script type="text/javascript" src="./assets/js/listUserChoices.js"></script>
   <script type="text/javascript" src="./assets/js/listUserChoicesConditionals.js"></script>
   <script type="text/javascript" src="./assets/js/checkout.js"></script>
+  <script type="text/javascript" src="./assets/js/resize.js"></script>
   <title>Frontend Mentor | Coffeeroasters subscription site</title>
 </head>
 <!-- Mobile: 375px x 5950px -->
@@ -261,7 +262,9 @@
     <div class="div-modal-summary">
       <div id="div-order-summary">"I drink my coffee ___, with a ___ type of bean, ___ ground ala ___, sent to me ___."</div>
       <div id="div-order-confirmation">Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout.</div>
-      <button id="btn-checkout-confirm" class="btn-cta">Checkout - <span id="span-checkout-price">$14.00</span> / <span id="span-checkout-timeframe">mo</span></button>
+      <div id="div-order-button-confirmation">
+        <button id="btn-checkout-confirm" class="btn-cta">Checkout - <span id="span-checkout-calculated-price"><span id="span-checkout-price">$14.00</span> / mo</span></button>
+      </div>
     </div>
   </div>
   <div id="div-bg-header-open" class="hide"></div>
