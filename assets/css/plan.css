@@ -33,12 +33,44 @@
 }
 
 .div-steps {
-  padding: 5rem 1.5rem;
+  position: relative;
+  padding: 11rem 2.5rem 6rem 2.5rem;
   margin-bottom: 7.5rem;
   text-align: center;
   background-color: hsl(213, 17%, 21%);
   border-radius: 10px;
   color: hsl(43, 78%, 98%);
+}
+
+#div-list-bg {
+  width: 65%;
+  position: absolute;
+  top: 6rem;
+  left: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#div-list-bg::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 15.5px;
+  z-index: 2;
+  width: calc(100% - 31px);
+  height: 2px;
+  background-color: hsl(40, 97%, 77%);
+}
+
+#div-list-bg > span {
+  width: 31px;
+  height: 31px;
+  display: block;
+  content: '';
+  border-radius: 50%;
+  border: 2px solid hsl(179, 81%, 29%);
+  z-index: 4;
 }
 
 .list-item-step {
@@ -128,6 +160,7 @@
   padding: 2rem;
   margin-bottom: 3.5rem;
   background-color: hsl(213, 17%, 21%);
+  border-radius: 10px;
   color: hsl(0, 0%, 100%);
 }
 
@@ -248,9 +281,12 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .div-hero, .div-steps, .div-checkout-summary {
+    margin-bottom: 9rem;
+  }
+
   .div-hero {
     padding: 0 2.5rem;
-    margin-bottom: 9rem;
   }
   
   #img-plan {
@@ -270,5 +306,55 @@ footer {
   .div-hero > div > h2 {
     font-size: 3rem;
     line-height: 3rem;
+  }
+
+  .list-steps {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+  }
+
+  .list-item-step {
+    width: 32.5%;
+    margin-bottom: 0;
+  }
+
+  /* #div-preferences */
+  .div-user-form {
+    padding: 0 2.5rem;
+  }
+
+  .div-input-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .div-input-header > h3 {
+    width: auto;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .list-user-choices {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .div-form-item > div:last-of-type > ul > li {
+    width: 32.5%;
+    padding: 2rem 1.5rem 5rem 1.5rem; 
+  }
+
+  .div-form-item > div:last-of-type > ul > li > h4 {
+    margin-bottom: 1.5rem;
+  }
+
+  .div-order {
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  footer {
+    padding: 0 2.5rem;
+    margin-bottom: 4.5rem;
   }
 }
