@@ -404,3 +404,136 @@ footer {
     line-height: 2.25rem;
   }
 }
+
+@media (min-width: 1400px) {
+  .div-hero, .div-steps, .div-checkout-summary {
+    margin-bottom: 10.5rem;
+  }
+
+  .div-hero {
+    padding: 0 5rem;
+  }
+
+  #img-plan {
+    content: url('../plan/desktop/image-hero-blackcup.jpg');
+    height: 450px;
+    border-radius: 0;
+  }
+
+  .div-hero > div {
+    width: 50%;
+    padding: 8.125rem 5.25rem;
+    left: 5rem;
+  }
+
+  .div-hero > div > h2 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+
+  .div-hero > div > div {
+    width: 80%;
+    font-size: 1rem;
+    line-height: 26px;
+  }
+
+  .div-steps {
+    padding: 12.5rem 5.25rem 6rem 5.25rem;
+    margin: 0 5rem 10.5rem 5rem;
+    border-radius: 0;
+  }
+
+  #div-list-bg {
+    width: 59.25%;
+    left: 5.25rem;
+  }
+
+  .list-steps {
+    justify-content: start;
+  }
+
+  .list-item-step {
+    width: 25.5%;
+    margin-right: 5.25rem;
+  }
+
+  .list-item-step > span {
+    margin-bottom: 3rem;
+  }
+
+  .list-item-step > h3 {
+    width: 85%;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    margin-bottom: 3rem;
+  }
+
+  .list-item-step > div {
+    font-size: 1rem;
+    line-height: 26px;
+  }
+
+  .div-user-form {
+    display: flex;
+    padding: 0 5rem;
+  }
+
+  #div-form-header-steps {
+    width: 55%;
+    padding: 0 7.75rem 0 5.25rem;
+  }
+
+  .list-item-form-step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    position: relative;
+    color: hsl(215, 5%, 54%);
+  }
+
+  .list-item-form-step::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: hsl(215, 5%, 54%);
+    position: absolute;
+    bottom: -1.25rem;
+    left: 0;
+  }
+
+  .list-item-form-step > span {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    display: block;
+    margin-right: 1.5rem;
+  }
+
+  .list-item-form-step > h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  #div-user-form-main {
+    padding-right: 5.25rem;
+  }
+
+  .div-input-header {
+    margin-bottom: 3rem;
+  }
+
+  .div-input-header > h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .div-form-item {
+    margin-bottom: 5rem;
+  }
+
+  .div-form-item > div:last-of-type > ul > li {
+    padding: 2rem 1.75rem 5.25rem 1.75rem;
+    margin-bottom: 0;
+  }
+}
