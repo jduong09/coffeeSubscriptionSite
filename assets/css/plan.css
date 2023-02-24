@@ -515,6 +515,14 @@ footer {
     line-height: 2rem;
   }
 
+  .list-item-form-step.selected > span {
+    color: hsl(179, 81%, 29%);
+  }
+
+  .list-item-form-step.selected > h4 {
+    color: hsl(215, 19%, 25%);
+  }
+
   #div-user-form-main {
     padding-right: 5.25rem;
   }
