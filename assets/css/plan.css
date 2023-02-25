@@ -110,6 +110,10 @@
   margin-bottom: 7rem;
 }
 
+#div-grind-li.disabled, #step-grind.disabled {
+  opacity: 49.64%;
+}
+
 .div-input-header {
   display: flex;
   align-items: center;

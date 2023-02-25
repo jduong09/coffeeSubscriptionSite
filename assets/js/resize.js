@@ -42,6 +42,20 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       divHeroDescription.innerText = 'Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from around the globe delivered fresh to your door.';
       divFormHeaderSteps.classList.add('hide');
+
+      /*
+      // When window resizes, we want to open up all the div form lists.
+      for (let i = 0; i < divFormItems.length; i++) {
+        const divFormItem = divFormItems[i];
+
+        if (i === 3 && divFormItem.classList.contains('disabled')) {
+          continue;
+        } else {
+          divFormItem.children[0].classList.add('open');
+          divFormItem.children[1].classList.remove('hide');
+        }
+      }
+      */
     }
   });
 

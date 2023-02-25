@@ -1,0 +1,32 @@
+Form Functionality
+
+Mobile/Tablet View 
+- All forms lists are open (done)
+- Div form steps are hidden (done)
+- When a user selects or deselects a list item
+    - Nothing changes (done)
+- If Capsule is selected (done)
+  - We disable the grind so that user cannot select it. (done)
+
+Desktop View
+- If no form inputs have been selected
+  - Bottom four form lists have been hidden
+  - Top form list is shown
+  - Div form steps are shown
+  - 1st step is selected
+
+- If form input has been selected
+  - All selected lists are open
+  - Find the lowest index non selected list, and open it
+    - Highlight the div form step of that list
+
+- If Capsule is selected
+  - Disable the grind list so that the user cannot select it (done)
+  - Gray out the div form step for grind
+
+- When user selects
+  - Update div form steps
+  - Set div form step selected to least index that has an open list and hasn't been selected
+
+- If user closes a div list
+  - Set div form step selected to least index that has an open list and hasn't been selected
