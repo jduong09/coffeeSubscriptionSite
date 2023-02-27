@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (listItemUserChoice.classList.contains('selected')) {
         // remove the selected tag from it, dehighlighting the selected item.
         listItemUserChoice.classList.remove('selected');
+        listItemUserChoice.parentElement.parentElement.parentElement.setAttribute('data-form-selected', false);
 
         // Get the correct span from the order summary div it is and reset it to being blank.
         const correctSpan = `span-${parentListUserChoiceId.slice(5)}`;
@@ -46,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // if the item that is being deselected is 'Capsule'
         // Then we need to enable the #div-grind-li element
         if (listItemUserChoice === listItemPreferenceCapsule) {
-          console.log('yo');
           // Add class name 'disabled' to #div-grind-li to give it the opaque css.
           stepGrind.classList.remove('disabled');
           divGrind.classList.remove('disabled');
@@ -70,7 +70,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Clicked item needs to be set to selected
         // Add selected to the classlist, so that will be highlighted
         listItemUserChoice.classList.add('selected');
-
+        
+        listItemUserChoice.parentElement.parentElement.parentElement.setAttribute('data-form-selected', true);
         // Remove other selected elements in this list so there aren't two selected.
         // Iterate through the current lists children
         for (let j = 0; j < parentListChildren.length; j++) {
