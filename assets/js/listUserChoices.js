@@ -1,5 +1,5 @@
 /* 
-  - Contains event listenrs for every list item that user can choose.
+  - Contains event listeners for every list item that user can choose.
 */
 document.addEventListener('DOMContentLoaded', () => {
   const listItemUserChoices = document.querySelectorAll('.list-user-choices > li');

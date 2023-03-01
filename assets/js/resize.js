@@ -60,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
           }
         }
-        console.log(resizeIdxIncomplete);
         // if resizeIdxIncomplete is undefined, then all forms have been filled out.
         // We set the last step, 'Deliveries' as 
         if ((resizeIdxIncomplete === undefined) || (resizeIdxIncomplete === 3 && divFormGrind.classList.contains('disabled'))) {
