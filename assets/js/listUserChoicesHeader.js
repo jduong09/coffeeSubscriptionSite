@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         divForm.children[1].classList.remove('hide');
       }
 
-      if (window.innerWidth >= 1400) {
+      if (window.innerWidth >= 1200) {
         let idxIncomplete;
         // We then need to check for which step needs to be selected next, and open it and highlight that one in the list-item-steps
         // In desktop view, we want to change the 'next possible form question that needs to be filled out' and set that as 'selected'

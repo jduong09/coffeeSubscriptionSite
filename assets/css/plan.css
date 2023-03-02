@@ -210,10 +210,6 @@
 }
 
 /* Footer */
-footer {
-  padding: 0 1.5rem;
-}
-
 /* #div-order-summary */
 /* 597px height */
 #div-order-modal {
@@ -285,6 +281,13 @@ footer {
 .div-form-item > div:last-of-type > ul > li:hover, .div-form-item > div:last-of-type > ul > li.selected {
   color: hsl(0, 0%, 100%);
   background-color: hsl(179, 81%, 29%);
+}
+
+@media (min-width: 500px) {
+  #img-plan {
+    height: 400px;
+    content: url('../plan/tablet/image-hero-blackcup.jpg');
+  }
 }
 
 @media (min-width: 768px) {
@@ -360,10 +363,6 @@ footer {
     margin-bottom: 2.5rem;
   }
 
-  footer {
-    padding: 0 2.5rem 4.5rem 2.5rem;
-  }
-
   #div-order-modal {
     width: calc(100% - 12rem);
     top: 13.5rem;
@@ -409,7 +408,7 @@ footer {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .div-hero, .div-steps, .div-checkout-summary {
     margin-bottom: 10.5rem;
   }
@@ -547,6 +546,10 @@ footer {
   .div-form-item > div:last-of-type > ul > li {
     padding: 2rem 1.75rem 5.25rem 1.75rem;
     margin-bottom: 0;
+  }
+
+  #btn-user-submit {
+    margin: 0 0 0 auto;
   }
 
   #div-order-modal {

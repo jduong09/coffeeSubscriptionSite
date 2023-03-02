@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Desktop View Conditional
-    if (window.innerWidth >= 1400) {
+    if (window.innerWidth >= 1200) {
       divHeroDescription.innerText = 'Coffee the way you wanted it to be. For coffee delivered tomorrow, or next week. For whatever brew method you use. For choice, for convenience, for quality.';
       divFormHeaderSteps.classList.remove('hide');
 
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btnCheckoutConfirm.append(spanCheckoutCalculatedPrice);
   }
 
-  if (window.innerWidth >= 1400) {
+  if (window.innerWidth >= 1200) {
     divHeroDescription.innerText = 'Coffee the way you wanted it to be. For coffee delivered tomorrow, or next week. For whatever brew method you use. For choice, for convenience, for quality.';
     divListBg.classList.remove('hide');
     divFormHeaderSteps.classList.remove('hide');
