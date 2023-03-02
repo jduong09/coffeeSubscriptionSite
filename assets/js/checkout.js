@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // if user clicks create my plan and order summary does not match correct conditionals, then we don't want to open modal
     // How to check if user has selected all prompts?
     // Check to see if all the result spans have been completed and are not empty.
-    console.log(spanPreference, spanType, spanQuantity, spanGrind, spanDelivery);
     if (spanPreference.innerText !== '' && spanPreference.innerText !== '___' && spanType.innerText !== '' && spanType.innerText !== '___' && spanQuantity.innerText !== '' && spanQuantity.innerText !== '___' && spanDelivery.innerText !== '' && spanDelivery.innerText !== '___') {
       if (spanPreference.innerText !== 'Capsules' && (spanGrind.innerText === '' || spanGrind.innerText === '___')) {
         spanPlanError.classList.remove('hide');

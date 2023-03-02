@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const listItemFormSteps = document.getElementsByClassName('list-item-form-step');
   const listItemPreferenceCapsule = document.getElementById('list-item-preference-capsule');
   const divFormItems = document.getElementsByClassName('div-form-item');
-  const btnArrowDeliveries = document.querySelector('#div-deliveries > .div-input-header > button');
+  const divInputDeliveries = document.querySelector('#div-deliveries > .div-input-header');
   
   for (let i = 0; i < iconArrows.length; i++) {
     const iconArrow = iconArrows[i];
@@ -21,15 +21,20 @@ document.addEventListener('DOMContentLoaded', () => {
       // This will rotate the svg
       // Then we hide the divForm
       if (divInputHeader.classList.contains('open')) {
-        divInputHeader.classList.remove('open');
+        if (window.innerWidth >= 1400 && listItemPreferenceCapsule.classList.contains('selected') && divInputDeliveries.classList.contains('open')) {
+          divInputHeader.classList.remove('open');
+          divForm.children[1].classList.add('hide');
+          return;
+        }
 
+        divInputHeader.classList.remove('open');
         divForm.children[1].classList.add('hide');
 
       } else {
         // InputHeader is closed, we use the parent element to set the class to open and rotate the svg
         // Remove the hide on the sibling list element
-        divInputHeader.classList.add('open');
 
+        divInputHeader.classList.add('open');
         divForm.children[1].classList.remove('hide');
       }
 
@@ -53,15 +58,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
           }
         }
-        console.log(idxIncomplete);
 
         // if resizeIdxIncomplete is undefined, then all forms have been filled out.
-        // We set the last step, 'Deliveries' as 
         if ((idxIncomplete === undefined)) {
           listItemFormSteps[4].classList.add('selected');
-        } else if (idxIncomplete === 3 && listItemPreferenceCapsule.classList.contains('selected')) {
+        } else if ((idxIncomplete === 3 && listItemPreferenceCapsule.classList.contains('selected'))) {
           listItemFormSteps[4].classList.add('selected');
-
           divFormItems[4].children[0].classList.add('open');
           divFormItems[4].children[1].classList.remove('hide');
         } else {

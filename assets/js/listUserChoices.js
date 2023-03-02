@@ -62,9 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
           btnGrindArrow.disabled = false;
           
           // Changes to the order summary sentence
-          spanModularWord.innerText = 'using';
-          spanGrindPhrase.innerText = '';
-          spanGrind.classList.add('hide');
+          spanModularWord.innerText = 'as';
+          spanGrindPhrase.innerText = 'ground ala';
+          spanGrind.classList.remove('hide');
         }
       } else {
         // Clicked item needs to be set to selected
