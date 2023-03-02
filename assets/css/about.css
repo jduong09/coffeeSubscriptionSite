@@ -17,7 +17,7 @@ main {
 }
 
 #img-about {
-  width: auto;
+  width: 100%;
   height: 400px;
   display: block;
   border-radius: 10px;
@@ -79,12 +79,12 @@ main {
 }
 
 #img-uncompromising-quality {
-  width: calc(100% - 3rem);
-  height: auto;
+  width: auto;
+  height: 156px;
   position: absolute;
   top: -78px;
-  left: 1.5rem;
-  right: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 0;
   border-radius: 8px;
 }
@@ -201,10 +201,9 @@ footer {
 
   #img-uncompromising-quality {
     content: url('../about/tablet/image-quality.jpg');
-    width: calc(100% - 7rem);
+    width: auto;
+    height: 320px;
     top: -160px;
-    left: 3.5rem;
-    right: 3.5rem;
   }
 
   .div-uncompromising-quality > h3 {
@@ -236,6 +235,18 @@ footer {
 
   .list-item-headquarter-location > div > h4 {
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #img-about {
+    content: url('../about/desktop/image-hero-whitecup.jpg');
+  }
+  
+  #img-our-commitment {
+    height: 520px;
+    content: url('../about/desktop/image-commitment.jpg');
+    margin-right: 8rem;
   }
 }
 
@@ -305,6 +316,7 @@ footer {
     left: initial;
     right: 5.25rem;
     bottom: 5.5rem;
+    transform: initial;
   }
 
   .div-uncompromising-quality > h3, .div-uncompromising-quality > div {
